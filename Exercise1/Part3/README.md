@@ -24,10 +24,10 @@ When answering the questions, remember to use all the resources at your disposal
  > - It makes it harder in the way that it can be difficult to make all the threads cooperate and interact. e.g. sharing of memory etc.
  
  ### What are the differences between processes, threads, green threads, and coroutines?
- > - Process: 
- > - Thread: Managed and scheduled by the OS
- > - Green Thread: Managed and scheduled by the runtime (i.e. not OS-managed)
- > - Coroutines:
+ > - Process: OS managed, has its own address space.
+ > - Thread: Managed and scheduled by the OS, has the same address space as the parent and all its other threads.
+ > - Green Thread: Same concept as threads but managed and scheduled by the runtime (i.e. not OS-managed)
+ > - Coroutines: Like threads, but not OS-managed and not truly concurrent (as the others)
  
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
  > - pthread_create(): Thread (OS-managed)
