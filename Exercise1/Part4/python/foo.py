@@ -11,12 +11,12 @@ i = 0
 
 def incrementingFunction():
     global i
-    for j = 1:1000000
+    for j in range(1000000):
         i = i+1
 
 def decrementingFunction():
     global i
-    for j = 1:1000000
+    for j in range(1000000):
         i = i-1
 
 
