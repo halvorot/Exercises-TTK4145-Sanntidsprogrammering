@@ -6,8 +6,8 @@ To complete this exercise you will have to use git. Create one or several commit
 When answering the questions, remember to use all the resources at your disposal. Asking the internet isn't a form of "cheating", it's a way of learning.
 
  ### What is concurrency? What is parallelism? What's the difference?
- > - Concurrency is when tasks are performed at exactly the same time. 
- > - Parallelism is when tasks are performed "side-by-side" but not necessarily at the exact same time.
+ > - Concurrency is when tasks are performed at the same time (but not literally), the scheduler will switch between the tasks in oreder to complete them all.
+ > - Parallelism is when tasks are performed "side-by-side" at the same time, independently of eachother. for example run the tasks on different cores at exactly the same time.
  
  ### Why have machines become increasingly multicore in the past decade?
  > CPU's have reached a limit and can not get much faster. This is because of: power consumption, heat generation, limits of speed in the physical conductors.
