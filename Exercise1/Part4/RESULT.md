@@ -1,0 +1,1 @@
+we see that we get alot of different number because of the shared resource i. both threads try to use i, and sometimes there is a conflict. for example threads access i at the same time and overwrite eachother etc. this is a problem we need to deal with when using concurrent programming.
