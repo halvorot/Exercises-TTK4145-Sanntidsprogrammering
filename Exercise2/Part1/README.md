@@ -1,16 +1,18 @@
 # Mutex and Channel basics
 
 ### What is an atomic operation?
-> *Your answer here*
+> Operations that run completely independently of any other processes. The operation is NOT communicating with, interfering with or being affected by other tasks while the operation is being performed. 
 
 ### What is a semaphore?
-> *Your answer here*
+> A non—negative integer Variable that, apart from initialization, can only be acted upon by two procedures. These procedures are called "wait" and "signal".
+> (1) wait(S) — If the Value of the semaphore S, is greater than zero then decrement its Value by 1; otherwise delay the task until S is greater than zero (and then decrement its value).
+> (2) signal (S) — Increment the value of the semaphore, S, by 1.
 
 ### What is a mutex?
-> *Your answer here*
+> A flag that indicates that a resource is in use and can not be accessed by any other process. 
 
 ### What is the difference between a mutex and a binary semaphore?
-> *Your answer here*
+> Mutex can be released only by thread that had acquired it, while you can signal semaphore from any other thread (or process).
 
 ### What is a critical section?
 > *Your answer here*
