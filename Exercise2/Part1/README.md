@@ -10,6 +10,7 @@
 
 ### What is a mutex?
 > A flag that indicates that a resource is in use and can not be accessed by any other process. 
+> When a task locks (acquires) a mutex only it can unlock (release) it. If a task tries to unlock a mutex it hasn’t locked (thus doesn’t own) then an error condition is encountered and the mutex is not unlocked.
 
 ### What is the difference between a mutex and a binary semaphore?
 > Mutex can be released only by thread that had acquired it, while you can signal semaphore from any other thread (or process).
