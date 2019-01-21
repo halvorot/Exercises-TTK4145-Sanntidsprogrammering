@@ -15,14 +15,13 @@ const (
 
 func number_server(add_number <-chan int, control <-chan int, number chan<- int) {
 	var i = 0
-	var n = 0
-	var message = 0
+
 	// This for-select pattern is one you will become familiar with if you're using go "correctly".
 	for {
 		select {
-		case n <- add_number:
+		case n := <- add_number:
 			i += n
-		case message <- control:
+		case message := <- control:
 			if message == GetNumber {
 				number <- i
 			}
