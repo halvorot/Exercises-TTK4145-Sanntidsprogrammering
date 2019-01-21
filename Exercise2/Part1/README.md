@@ -16,13 +16,16 @@
 > Mutex can be released only by thread that had acquired it, while you can signal semaphore from any other thread (or process).
 
 ### What is a critical section?
-> *Your answer here*
+> the part of the code that can access the shared memory.
 
 ### What is the difference between race conditions and data races?
- > *Your answer here*
+ > when two instructions from different threads access the same memory location at the same time.
 
 ### List some advantages of using message passing over lock-based synchronization primitives.
-> *Your answer here*
+> threads can not modify each other's data.
+> avoid race conditions and data races. 
+> dont have to think about locks etc
 
 ### List some advantages of using lock-based synchronization primitives over message passing.
-> *Your answer here*
+> message passing is an abstraction of lock based
+> more control over exactly what's appening
